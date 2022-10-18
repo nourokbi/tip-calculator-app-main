@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/tip-calculator-with-responsive-design-flexbox-grid-and-js-events-JhPLCHklZd)
-- Live Site URL: [Add live site URL here](https://tip-calculator-app-main-sandy.vercel.app/)
+- Solution URL: https://www.frontendmentor.io/solutions/tip-calculator-with-responsive-design-flexbox-grid-and-js-events-JhPLCHklZd
+- Live Site URL: https://tip-calculator-app-main-sandy.vercel.app/
 
 ## My process
 
