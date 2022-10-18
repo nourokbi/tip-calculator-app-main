@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="32x32"
+      href="./images/icon-dollar.svg"
+    />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <section class="logo">
+        <img src="./images/logo.svg" alt="Splitter Logo" />
+      </section>
+      <section class="content">
+        <div class="input-section">
+          <div class="title">
+            <p>Bill</p>
+            <p class="error-message"></p>
+          </div>
+          <div class="bill-input">
+            <img src="./images/icon-dollar.svg" alt="Dollar icon" />
+            <input type="text" id="bill-amount" placeholder="Bill amount" />
+          </div>
+          <div class="title">
+            <p>Select Tip %</p>
+            <p class="error-message"></p>
+          </div>
+          <div class="tip-ratio">
+            <button id="five">5%</button>
+            <button id="ten">10%</button>
+            <button id="fifteen" class="selected">15%</button>
+            <button id="twenty-five">25%</button>
+            <button id="fifty">50%</button>
+            <input type="text" id="tip-amount" placeholder="Custom" />
+          </div>
+          <div class="title">
+            <p>Number of People</p>
+            <p class="error-message"></p>
+          </div>
+          <div class="people">
+            <img src="./images/icon-person.svg" alt="Person icon" />
+            <input
+              type="text"
+              id="person-input"
+              placeholder="Number of persons"
+            />
+          </div>
+        </div>
+        <div class="result-section">
+          <div class="results">
+            <div>
+              <p>Tip Amount <br /><span>/ person</span></p>
+              <h3>$0.0</h3>
+            </div>
+            <div>
+              <p>
+                Total <br />
+                <span>/ person</span>
+              </p>
+              <h3>$0.0</h3>
+            </div>
+          </div>
+          <div class="reset">
+            <button id="reset-btn">RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="attribution">
+      Coded by
+      <a href="https://github.com/nourokbi" target="_blank">Nour Okbi</a>.
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

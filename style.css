@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+:root {
+  --bg-body-clr: hsl(185, 41%, 84%);
+  --main-clr: hsl(183, 100%, 15%);
+  --accent-clr: hsl(172, 67%, 45%);
+  --input-clr: ;
+}
+* {
+  box-sizing: border-box;
+}
+button,
+input {
+  font-family: "Space Mono", monospace;
+  border: none;
+  outline: none;
+}
+button {
+  background-color: var(--main-clr);
+  color: white;
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 250ms, color 250ms;
+}
+input {
+  border: 2px solid hsl(189, 41%, 97%);
+  padding: 5px;
+  border-radius: 5px;
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+}
+input:focus {
+  border: 2px solid var(--accent-clr);
+}
+p,
+br,
+h3 {
+  margin: 0;
+}
+::placeholder {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  text-align: left;
+}
+body {
+  background-color: var(--bg-body-clr);
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+/* Utilities */
+.selected {
+  color: var(--main-clr) !important;
+  background-color: var(--accent-clr) !important;
+}
+.error {
+  border-color: red !important;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.error-message {
+  color: rgb(252, 29, 29) !important;
+  padding: 0;
+}
+
+/* Layout */
+main {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .logo {
+  margin: 0 0 50px;
+}
+main .logo img {
+  width: 70px;
+}
+main .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 1px 1px 10px hsl(186, 14%, 43%);
+}
+main .content .input-section {
+  max-width: 400px;
+  width: 100%;
+  padding: 15px;
+}
+main .content .input-section .title:nth-child(3) {
+  margin-bottom: 15px !important;
+  margin-top: 30px;
+}
+main .content .input-section p {
+  color: hsl(186, 14%, 43%);
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+main .content .input-section .bill-input {
+  margin-bottom: 25px;
+}
+main .content .input-section .bill-input,
+main .content .input-section .people {
+  position: relative;
+}
+main .content .input-section .bill-input input,
+main .content .input-section .people input {
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+}
+main .content .input-section .bill-input img,
+main .content .input-section .people img {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+}
+main .content .input-section .tip-ratio {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(115px, 1fr));
+  gap: 10px;
+  margin-bottom: 25px;
+}
+main .content .input-section .tip-ratio button:hover {
+  background-color: var(--bg-body-clr);
+  color: var(--main-clr);
+}
+main .content .input-section .tip-ratio input {
+  padding: 5px 15px;
+  height: 37px;
+  border-radius: 8px;
+}
+main .content .input-section .tip-ratio input::placeholder {
+  color: var(--main-clr);
+}
+/* Result Section */
+main .content .result-section {
+  max-width: 420px;
+  min-width: 400px;
+  min-height: 260;
+  padding: 40px;
+  background-color: var(--main-clr);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+main .content .result-section > * {
+  width: 100%;
+}
+main .content .result-section .results div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .content .result-section .results div p {
+  font-size: 13px;
+}
+main .content .result-section .results div p span {
+  color: hsl(184, 14%, 56%);
+  font-size: 11px;
+}
+main .content .result-section .results div h3 {
+  font-size: 32px;
+  color: var(--accent-clr);
+}
+main .content .result-section .reset {
+  text-align: center;
+}
+main .content .result-section .reset button {
+  width: 100%;
+  color: var(--main-clr);
+  background-color: var(--accent-clr);
+}
+main .content .result-section .reset button:hover {
+  background-color: var(--bg-body-clr);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--accent-clr);
+  font-size: 12px;
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: var(--main-clr);
+}
+.attribution br {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  main .logo {
+    margin-top: 50px;
+  }
+  main .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .attribution {
+    margin: 30px 0 15px;
+  }
+}
+@media (max-width: 480px) {
+  main {
+    width: 100%;
+  }
+  main .content {
+    width: 100%;
+    padding: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-bottom: 80px;
+  }
+  main .content > * {
+    width: 100%;
+    padding: 0;
+  }
+  main .content .input-section {
+    padding: 0;
+  }
+  main .content .input-section .tip-ratio {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+  main .result-section {
+    width: 100%;
+    min-width: 300px !important;
+  }
+  .attribution {
+    margin-top: -40px;
+    background-color: white;
+  }
+  .attribution br {
+    display: block;
+  }
+}
