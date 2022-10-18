@@ -33,8 +33,7 @@ input:focus {
   border: 2px solid var(--accent-clr);
 }
 p,
-br,
-h3 {
+h1 {
   margin: 0;
 }
 ::placeholder {
@@ -131,17 +130,21 @@ main .content .input-section .tip-ratio {
   gap: 10px;
   margin-bottom: 25px;
 }
+main .content .input-section .tip-ratio button {
+    font-size: 18px;
+}
 main .content .input-section .tip-ratio button:hover {
   background-color: var(--bg-body-clr);
   color: var(--main-clr);
 }
 main .content .input-section .tip-ratio input {
   padding: 5px 15px;
-  height: 37px;
+  height: 43px;
   border-radius: 8px;
 }
 main .content .input-section .tip-ratio input::placeholder {
   color: var(--main-clr);
+  font-size: 20px;
 }
 /* Result Section */
 main .content .result-section {
@@ -173,7 +176,7 @@ main .content .result-section .results div p span {
   color: hsl(184, 14%, 56%);
   font-size: 11px;
 }
-main .content .result-section .results div h3 {
+main .content .result-section .results div h1 {
   font-size: 32px;
   color: var(--accent-clr);
 }

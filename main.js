@@ -5,7 +5,7 @@ const customTip = document.getElementById("tip-amount");
 const tipAmounts = document.querySelectorAll(".tip-ratio button");
 // Output Elements
 const errorMessage = document.querySelectorAll(".error-message");
-const results = document.querySelectorAll("h3");
+const results = document.querySelectorAll("h1");
 const resetBtn = document.getElementById("reset-btn");
 // Error Message
 const lessThanZero = "Can't be zero or less";
