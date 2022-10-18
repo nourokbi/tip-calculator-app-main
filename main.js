@@ -96,7 +96,6 @@ resetBtn.addEventListener("click", () => {
   personsNumber.value = "";
   customTip.value = "";
   removeSelected();
-  tipAmounts[2].classList.add("selected");
   results[0].textContent = `$0.0`;
   results[1].textContent = `$0.0`;
 });
